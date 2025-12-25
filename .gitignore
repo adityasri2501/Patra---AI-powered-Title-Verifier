@@ -1,0 +1,28 @@
+firebase_key.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Firebase
+.firebase/
+firebase_key.json
+
+# Environment
+.env
+
+# Data files
+data/*.xls
+data/*.xlsx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / frontend
+node_modules/
+
+# Logs
+*.log

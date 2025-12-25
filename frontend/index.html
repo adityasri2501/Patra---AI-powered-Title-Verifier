@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patr – AI Title Verification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">
+  <img src="assets/logo.jpeg" alt="Patr Logo" />
+  <span>Patr</span>
+  </div>
+  <div class="status">
+    <span class="dot"></span> AI System Active
+    <span class="divider">|</span>
+    PRGI · Ministry of I&B
+  </div>
+</header>
+
+<main class="hero">
+  <span class="pill">PRGI Official Title Verification</span>
+
+  <h1>
+    Verify Your Newspaper<br>
+    <span>Title Instantly</span>
+  </h1>
+
+  <p class="subtitle">
+    AI-powered verification engine that checks phonetic similarity,
+    semantic matching, and PRGI compliance in real-time.
+  </p>
+
+  <div class="stats">
+    <div>📚 <b>1.6L+</b><span>Registered Titles</span></div>
+    <div>🌐 <b>22+</b><span>Languages</span></div>
+    <div>⚡ <b>&lt;1s</b><span>Response</span></div>
+  </div>
+
+  <!-- INPUT -->
+  <div class="search-box">
+    <input type="text" id="titleInput" placeholder="Enter your proposed newspaper title..." />
+    <button onclick="verifyTitle()">Verify</button>
+    <div id="loader" class="loader hidden">
+    Verifying title…
+  </div>
+
+  </div>
+
+  <p class="hint">AI-powered verification using phonetic, semantic & rule-based analysis</p>
+
+  <!-- OUTPUT (INPUT KE NICHE) -->
+  <div id="result" class="result hidden">
+
+  <h3 id="status" class="status"></h3>
+
+  <p><b>Reason:</b> <span id="reason">—</span></p>
+
+  <div class="scores">
+    <p>Phonetic Score: <span id="phonetic">—</span></p>
+    <p>String Score: <span id="string">—</span></p>
+    <p>Semantic Score: <span id="semantic">—</span></p>
+  </div>
+
+  <p><b>Matched Title:</b> <span id="matched">—</span></p>
+  <p><b>Policy Code:</b> <span id="policy">—</span></p>
+  <p><b>Verification Probability:</b> <span id="prob">—</span></p>
+
+</div>
+
+</main>
+
+<section class="features">
+  <h2>AI-Powered <span>Verification</span></h2>
+  <p>Multi-layer analysis system for accurate title verification</p>
+
+  <div class="cards">
+    <div class="card">
+      🔊 <h3>Phonetic Analysis</h3>
+      <p>Soundex & Metaphone based sound similarity detection</p>
+    </div>
+    <div class="card">
+      🧠 <h3>Semantic Matching</h3>
+      <p>Multi-language meaning detection using AI embeddings</p>
+    </div>
+    <div class="card">
+      🧾 <h3>String Similarity</h3>
+      <p>Levenshtein & Jaro-Winkler distance checks</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPERS SECTION -->
+<section class="developers">
+  <h2>Project Contributors</h2>
+  <p class="dev-subtitle">
+    This system is developed as a government-tech AI prototype for
+    Newspaper Title Verification under PRGI guidelines.
+  </p>
+
+  <div class="dev-cards">
+
+    <div class="dev-card">
+      <h3>Aditya Kumar Srivastava</h3>
+      <p class="role">System Architect</p>
+      <ul>
+        <li>Overall system design & architecture</li>
+        <li>Backend API (Flask) & AI integration</li>
+        <li>Title similarity logic (phonetic, semantic, rules)</li>
+      </ul>
+    </div>
+
+    <div class="dev-card">
+      <h3>Susmita Mahato</h3>
+      <p class="role">Frontend Developer</p>
+      <ul>
+        <li>Government-grade UI design</li>
+        <li>Frontend–backend integration</li>
+        <li>PRGI compliance & decision engine</li>
+      </ul>
+    </div>
+      <div class="dev-card">
+      <h3>Vineet Dubey</h3>
+      <p class="role">AI & Data Pipeline</p>
+      <ul>
+        <li>Phonetic matching (Soundex / Metaphone)</li>
+        <li>String similarity (Levenshtein, Jaro)</li>
+        <li>Semantic similarity using embeddings</li>
+      </ul>
+    </div>
+      <div class="dev-card">
+      <h3>Vedanti Tiwari</h3>
+      <p class="role">NLP & Similarity Analysis</p>
+      <ul>
+        <li>Result visualization & score breakdown</li>
+        <li>System responsiveness & usability</li>
+        <li>Confidence scoring & explainability</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="footer-note">
+    © 2025 | AI Newspaper Title Verification System | Prototype for Academic & Government Use
+  </p>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+  <p>
+    Developed by <span>TechSAVVY</span>
+  </p>
+</footer>
+
+
+
+</body>
+<script src="app.js"></script>
+</html>
